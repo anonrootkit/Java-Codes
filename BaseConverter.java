@@ -81,7 +81,7 @@ class BaseConverter{
     }
     
     public void convertToDecimal(){
-        if(inputNumberBase == BASE_10) return;
+        if(inputNumberBase == BASE_10) {outputNumber=inputNumber; return;}
         
         int sum = getIndex(inputNumber.charAt(0));
         int length = inputNumber.length();
